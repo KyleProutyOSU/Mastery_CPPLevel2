@@ -12,6 +12,7 @@ class Mother: public Person
 {
     public:
         Mother(string, int);
+        ~Mother();
 };
 
 #endif /* Mother_h */

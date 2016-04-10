@@ -12,6 +12,7 @@ class Son: public Father
 {
     public:
         Son(string name, int age);
+        ~Son();
 };
 
 #endif /* Son_h */
