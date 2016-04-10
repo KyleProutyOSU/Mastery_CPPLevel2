@@ -1,7 +1,7 @@
-/*
- * Person.h
- *
- */
+//
+//  Person.h
+//  Mastery_Level2
+//
 #ifndef PERSON_H_
 #define PERSON_H_
 
@@ -12,20 +12,23 @@ using namespace std;
 class Person
 {
     public:
-		Person(string, int);
+		Person(string,int);
+        Person(string,int,string); //constructor overloading
+        Person operator+(Person); //operator overload
+
         ~Person();
 
-		void setName(string);
+		void setName(string); //encapsulation functions
 		string getName();
 		void setAge(int);
 		int getAge();
         void speak();
-        
+        void setSpeak(string);
+        string getSpeak();
 
 	private:
-		string name;
+		string name, saying; //encapsulated variables
 		int age;
-
 };
 
 #endif /* PERSON_H_ */

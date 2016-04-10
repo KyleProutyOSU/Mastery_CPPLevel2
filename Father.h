@@ -2,7 +2,6 @@
 //  Father.h
 //  Mastery_Level2
 //
-//
 
 #ifndef Father_h
 #define Father_h
@@ -17,7 +16,6 @@ class Father: public Person
     
     private:
         int randomNum();
-    
 };
 
 #endif /* Father_h */

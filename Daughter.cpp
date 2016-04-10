@@ -2,7 +2,6 @@
 //  Daughter.cpp
 //  Mastery_Level2
 //
-//
 
 #include "Daughter.h"
 
