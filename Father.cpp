@@ -15,15 +15,15 @@ void Father::speak()
     
     switch(rand_num)
     {
-        case 1: cout<<"Lets go watch the beaver game!"<<endl;
+        case 1: cout<<"Dad: Lets go watch the beaver game!"<<endl;
             break;
-        case 2: cout<<"I'm sleepy, night night"<<endl;
+        case 2: cout<<"Dad: I'm sleepy, night night"<<endl;
             break;
-        case 3: cout<<"Wow that was interesting!"<<endl;
+        case 3: cout<<"Dad: Wow that was interesting!"<<endl;
             break;
-        case 4: cout<<"I shouldn't program so late"<<endl;
+        case 4: cout<<"Dad: I shouldn't program so late"<<endl;
             break;
-        default: cout<<"Ok, lets stop!"<<endl;
+        default: cout<<"Dad: Ok, lets stop!"<<endl;
             break;
     }
 }

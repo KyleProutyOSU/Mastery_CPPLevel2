@@ -5,7 +5,7 @@
 #include "Person.h"
 
 Person::Person(string name, int age)
-:saying("I am a person, I can speak")
+:saying("Person: I am a person, I can speak")
 {
 	setName(name);
 	setAge(age);
@@ -19,15 +19,12 @@ Person::Person(string name, int age, string saying)
     setSpeak(saying);
 }
 
-Person::~Person()
-{
-    //cout<<"I'm a destruct!"<<endl;
-}
+Person::~Person() {} 
 
 //  operator overloading
 Person Person::operator+ (Person person)
 {
-    Person temp("blank",22," MORE TEXT");
+    Person temp("blank",22," OPERATOR OVERLOAD!");
     temp.setSpeak(person.getSpeak()+temp.getSpeak());
     return temp;
 }

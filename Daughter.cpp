@@ -5,9 +5,7 @@
 
 #include "Daughter.h"
 
-Daughter::Daughter(string name, int age): Mother(name, age) {}
-
-void Daughter::speak()
+Daughter::Daughter(string name, int age): Mother(name, age)
 {
-    cout<<"I'm a girl"<<endl;
+    setSpeak("Daughter: I'm a girl");
 }

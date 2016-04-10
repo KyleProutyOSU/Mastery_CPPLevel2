@@ -12,7 +12,6 @@ class Daughter: public Mother
 {
     public:
         Daughter(string, int);
-        void speak();
 };
 
 #endif /* Daughter_h */
