@@ -39,7 +39,6 @@ void funWithPolymorphism()
     example(person, dad, mom);
     example(person,dad,mom,son,daughter);
     */
-    
 }
 
 void example()
@@ -73,6 +72,7 @@ void example(Person person)
     person.setSpeak("Person: person new saying");
     person2.setSpeak("Person2: person2 updated saying");
     cout<<""<<endl;
+    
     person.speak();
     person2.speak();
 }

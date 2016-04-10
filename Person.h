@@ -15,7 +15,6 @@ class Person
 		Person(string,int);
         Person(string,int,string); //constructor overloading
         Person operator+(Person); //operator overload
-
         ~Person();
 
 		void setName(string); //encapsulation functions
