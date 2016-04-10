@@ -1,7 +1,7 @@
-/*
- * Person.h
- *
- */
+//
+//  Person.h
+//  Mastery_Level2
+//
 #ifndef PERSON_H_
 #define PERSON_H_
 
@@ -14,10 +14,11 @@ class Person
     public:
 		Person(string,int);
         Person(string,int,string); //constructor overloading
+        Person operator+(Person); //operator overload
 
         ~Person();
 
-		void setName(string);
+		void setName(string); //encapsulation functions
 		string getName();
 		void setAge(int);
 		int getAge();
@@ -26,7 +27,7 @@ class Person
         string getSpeak();
 
 	private:
-		string name, saying;
+		string name, saying; //encapsulated variables
 		int age;
 };
 

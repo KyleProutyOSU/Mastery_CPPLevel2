@@ -1,7 +1,7 @@
-/*
- * Person.cpp
- *
- */
+//
+//  Person.cpp
+//  Mastery_Level2
+//
 #include "Person.h"
 
 Person::Person(string name, int age)
@@ -24,6 +24,15 @@ Person::~Person()
     //cout<<"I'm a destruct!"<<endl;
 }
 
+//  operator overloading
+Person Person::operator+ (Person person)
+{
+    Person temp("blank",22," MORE TEXT");
+    temp.setSpeak(person.getSpeak()+temp.getSpeak());
+    return temp;
+}
+
+//  accessor and mutators
 void Person::setName(string name)
 {
 	(this->name) = name;
