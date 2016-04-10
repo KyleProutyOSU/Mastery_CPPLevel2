@@ -12,7 +12,9 @@ using namespace std;
 class Person
 {
     public:
-		Person(string, int);
+		Person(string,int);
+        Person(string,int,string); //constructor overloading
+
         ~Person();
 
 		void setName(string);
@@ -20,12 +22,12 @@ class Person
 		void setAge(int);
 		int getAge();
         void speak();
-        
+        void setSpeak(string);
+        string getSpeak();
 
 	private:
-		string name;
+		string name, saying;
 		int age;
-
 };
 
 #endif /* PERSON_H_ */

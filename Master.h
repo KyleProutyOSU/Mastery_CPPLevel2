@@ -16,6 +16,10 @@
 using namespace std;
 
 void funWithPolymorphism();
-void startHere(Person,Father,Mother,Son,Daughter);
+
+//  function overloading
+void example(Person);
+void example(Person,Father,Mother);
+void example(Person,Father,Mother,Son,Daughter);
 
 #endif /* Master_h */

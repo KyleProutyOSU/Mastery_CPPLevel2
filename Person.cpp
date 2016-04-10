@@ -5,14 +5,23 @@
 #include "Person.h"
 
 Person::Person(string name, int age)
+:saying("I am a person, I can speak")
 {
 	setName(name);
 	setAge(age);
 }
 
+//  constructor overloading
+Person::Person(string name, int age, string saying)
+{
+    setName(name);
+    setAge(age);
+    setSpeak(saying);
+}
+
 Person::~Person()
 {
-    cout<<"I'm a destruct!"<<endl;
+    //cout<<"I'm a destruct!"<<endl;
 }
 
 void Person::setName(string name)
@@ -37,7 +46,17 @@ int Person::getAge()
 
 void Person::speak()
 {
-    cout << "I am a person, I can speak" << endl;
+    cout << getSpeak() << endl;
+}
+
+void Person::setSpeak(string saying)
+{
+    (this->saying) = saying;
+}
+
+string Person::getSpeak()
+{
+    return (this->saying);
 }
 
 
