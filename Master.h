@@ -16,7 +16,6 @@ using namespace std;
 
 void funWithPolymorphism();
 
-//  function overloading
 void example();
 void example(Person);
 void example(Person,Father,Mother);

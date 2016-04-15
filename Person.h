@@ -13,11 +13,11 @@ class Person
 {
     public:
 		Person(string,int);
-        Person(string,int,string); //constructor overloading
-        Person operator+(Person); //operator overload
+        Person(string,int,string); 
+        Person operator+(Person);
         ~Person();
 
-		void setName(string); //encapsulation functions
+		void setName(string);
 		string getName();
 		void setAge(int);
 		int getAge();
@@ -26,7 +26,7 @@ class Person
         string getSpeak();
 
 	private:
-		string name, saying; //encapsulated variables
+		string name, saying;
 		int age;
 };
 

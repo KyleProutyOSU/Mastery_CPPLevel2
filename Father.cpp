@@ -28,8 +28,6 @@ void Father::speak()
     }
 }
 
-// random number function generates a random number between min, max using
-// the random library
 int Father::randomNum()
 {
     int min = 1, max =4;
